@@ -118,7 +118,12 @@ You MUST output in this EXACT format (no deviation):
 - Front-load the most important visual elements (AI models weigh the beginning more heavily).
 - Use POSITIVE language only in the main prompt (describe what you WANT, not what you don't want).
 - The Korean explanation should be 3-5 bullet points, helpful and educational.
-- ALWAYS generate a negative prompt that includes "no text, no subtitles, no captions" - this is NON-NEGOTIABLE.`;
+- ALWAYS generate a negative prompt that includes "no text, no subtitles, no captions, no English text, no foreign language text, no alien text, no watermarks" - this is NON-NEGOTIABLE.
+- 🔒 [필수 고정 규칙 - 언어 & 자막]:
+  1. 영상 속 인물이 대사를 하는 경우, 반드시 "speaking in Korean (한국어)" 또는 "dialogue in Korean language"를 프롬프트에 포함하세요.
+  2. 영문 프롬프트의 마지막에 반드시 다음 문구를 추가하세요: "All dialogue and speech must be in Korean. No English speech, no foreign language, no alien language, no subtitles, no captions, no on-screen text of any kind."
+  3. 부정 프롬프트에 반드시 포함: "English speech, English dialogue, foreign language speech, alien language, subtitles, captions, on-screen text, watermarks, text overlays"
+  4. 이 규칙은 사용자 입력과 관계없이 항상 적용됩니다.`;
 
 // ============================================
 // API 엔드포인트
